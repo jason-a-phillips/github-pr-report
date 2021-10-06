@@ -5,7 +5,7 @@ Creates and emails a report of GitHub pull requests within the last week.
 This short JavaScript program executes HTTP GET requests against the GitHub API, querying pull requests created in the last week within Microsoft's Visual Studio Code repository. The results are collated in a simple report and emailed to a configurable list of recipients.
 
 ### Short technical description
-The program is written in JavaScript and uses Nodejs. Two NPM packages are used: superagent (for making http requests) and nodemailer (for sending mail). The program recursively calls the GitHub API until PRs older than one week are found, and then stops. All blocking code is handled with async/await or promises.
+The program is written in JavaScript and uses Nodejs. Two NPM packages are used: superagent (for making http requests) and nodemailer (for sending mail). The program recursively calls the GitHub API until PRs older than one week are found and then stops. All blocking code is handled with async/await or promises.
 
 ### Requirements
 In this example I use my own GitHub account and personal access token to query the GitHub repo. This allows for more permissive rate-limiting, rather than querying without authentication. Create your own GitHub account and token, then use the GITHUB_USER and GITHUB_PASS environment variables. 
