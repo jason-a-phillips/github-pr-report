@@ -1,0 +1,15 @@
+{
+  "name": "github-pr-report",
+  "version": "1.0.0",
+  "description": "Creates and emails a report about PRs in the last week",
+  "main": "program.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GNU/GPL 3.0",
+  "dependencies": {
+    "nodemailer": "^6.6.5",
+    "superagent": "^6.1.0"
+  }
+}
