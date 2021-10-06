@@ -54,7 +54,7 @@ async function main() {
     
                 body += "<strong>Title: " + p.title + "</strong><br>";
                 body += "<strong>Labels:</strong> " + labels + "<br>";
-                body += "<strong>Milestone:</strong> " + (p.milestone ? p.milestone : "None") + "<br>";
+                body += "<strong>Milestone:</strong> " + (p.milestone && p.milestone.title ? p.milestone.title : "None") + "<br>";
                 body += "<strong>Created on:</strong> " + p.created_at + "<br>";
                 body += "<strong>Status:</strong> " + p.state + "<br>";
                 body += "<strong>Created by:</strong> " + p.user.login + "<br>";
